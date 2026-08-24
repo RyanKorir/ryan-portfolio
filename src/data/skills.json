@@ -6,7 +6,7 @@
       "skills": [
         { "name": "Python", "level": "hands-on" },
         { "name": "Django", "level": "hands-on" },
-        { "name": "JavaScript", "level": "working-knowledge" },
+        { "name": "JavaScript", "level": "hands-on" },
         { "name": "TypeScript", "level": "familiar" },
         { "name": "React", "level": "working-knowledge" },
         { "name": "HTML", "level": "hands-on" },

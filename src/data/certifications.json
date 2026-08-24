@@ -1,0 +1,19 @@
+{
+  "intro": "Verified credentials and in-progress coursework from Cisco Networking Academy.",
+  "certificates": [
+    {
+      "id": "cisco-packet-tracer-getting-started",
+      "title": "Getting Started with Cisco Packet Tracer",
+      "issuer": "Cisco Networking Academy",
+      "date": "2026-08-19",
+      "credentialId": "157a7b04-23e4-41b2-a686-b59134aca943",
+      "type": "certificate"
+    }
+  ],
+  "modulesInProgress": [
+    { "title": "Network Access Basics", "issuedOn": "2026-08-21" },
+    { "title": "Internet Protocol Basics", "issuedOn": "2026-08-21" },
+    { "title": "Getting Started with Cisco Networking Academy", "issuedOn": "2026-08-19" },
+    { "title": "Network Basics", "issuedOn": "2026-08-19" }
+  ]
+}

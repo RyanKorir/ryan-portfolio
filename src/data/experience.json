@@ -1,25 +1,26 @@
 [
   {
-    "id": "gulf-african-bank",
+    "id": "gulf-african-bank-support-desk",
     "organization": "Gulf African Bank",
-    "roleLabel": "[ADD JOB TITLE]",
+    "roleLabel": "Support Desk",
     "type": "ICT Internship / Practical Experience",
-    "dateRange": "[ADD DATES]",
+    "dateRange": "09/2025 – 08/2026",
+    "location": "Nairobi, Kenya",
     "summary": "Practical ICT support and infrastructure exposure within a banking environment, spanning help-desk support, device deployment, documentation, and hands-on networking concepts.",
     "responsibilities": [
+      "Assist staff with daily administrative and technical tasks",
+      "Provide technical support by identifying and resolving system and user issues",
+      "Data entry, cleaning, and basic reporting for accurate information",
+      "Work with different teams to complete tasks and support ongoing projects",
+      "Organize and maintain records for easy access and compliance",
+      "Use banking systems and workplace tools for daily responsibilities",
+      "Improve workflow by helping streamline routine processes",
       "IT help-desk support",
-      "Troubleshooting user issues",
-      "PC setup and configuration",
-      "Deployment of new computers",
-      "Device documentation",
-      "IT asset tracking",
+      "PC setup, configuration, and deployment of new computers",
+      "Device documentation and IT asset tracking",
       "Branch/user support",
       "IP phone setup",
-      "Server-room organization",
-      "Cable management",
-      "Documentation and inventory work",
-      "Learning and applying networking concepts",
-      "Operational support"
+      "Server-room organization and cable management"
     ],
     "networkingConcepts": [
       "VLAN concepts",
@@ -29,7 +30,42 @@
       "DMZ",
       "DAC"
     ],
-    "environment": ["Windows environments"],
-    "note": "Do not add numerical achievements, formal job titles, or dates that have not been explicitly confirmed by Ryan."
+    "environment": ["Windows environments"]
+  },
+  {
+    "id": "gulf-african-bank-intern",
+    "organization": "Gulf African Bank",
+    "roleLabel": "Intern",
+    "type": "Internship",
+    "dateRange": "05/2024 – 09/2024",
+    "location": "Nairobi, Kenya",
+    "summary": "Earlier internship stint supporting staff and gaining hands-on exposure to industry workflows and tools.",
+    "responsibilities": [
+      "Supported staff members in daily tasks, reducing workload burden",
+      "Gained experience applying learned concepts directly into work situations",
+      "Analyzed problems and worked with teams to develop solutions",
+      "Collaborated with fellow interns on group projects and presentations",
+      "Sorted and organized files, spreadsheets, and reports",
+      "Gained hands-on experience across various software programs",
+      "Participated in workshops and presentations related to projects",
+      "Developed organizational skills managing multiple tasks under deadlines"
+    ]
+  },
+  {
+    "id": "kplc-attache",
+    "organization": "Kenya Power and Lighting Company",
+    "roleLabel": "Attaché",
+    "type": "Industrial Attachment",
+    "dateRange": "05/2023 – 08/2023",
+    "location": "Nairobi, Kenya",
+    "summary": "Industrial attachment providing IT support and gaining practical exposure to project management, data analysis, and troubleshooting within a corporate IT environment.",
+    "responsibilities": [
+      "Stayed current on business developments to answer questions on public events",
+      "Assessed hardware, mice, and keyboards to verify performance",
+      "Gained practical experience in project management, data analysis, and troubleshooting",
+      "Provided technical support to company staff across internal and external applications",
+      "Supported maintenance, installation, and upgrade of operating systems including Windows and Linux"
+    ]
   }
 ]
+

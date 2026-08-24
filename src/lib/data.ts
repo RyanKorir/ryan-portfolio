@@ -5,6 +5,7 @@ import skillsJson from "@/data/skills.json";
 import buildLabJson from "@/data/build-lab.json";
 import achievementsJson from "@/data/achievements.json";
 import configJson from "@/data/config.json";
+import certificationsJson from "@/data/certifications.json";
 
 import type {
   Profile,
@@ -13,7 +14,8 @@ import type {
   SkillsData,
   BuildLabData,
   Achievement,
-  SiteConfig
+  SiteConfig,
+  CertificationsData
 } from "@/lib/types";
 
 // Thin typed accessors. Keeping these as functions (not just re-exported
@@ -50,4 +52,8 @@ export function getAchievements(): Achievement[] {
 
 export function getConfig(): SiteConfig {
   return configJson as SiteConfig;
+}
+
+export function getCertifications(): CertificationsData {
+  return certificationsJson as CertificationsData;
 }

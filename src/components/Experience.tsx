@@ -33,6 +33,11 @@ export default function Experience({ entries }: { entries: ExperienceEntry[] }) 
                     {entry.dateRange}
                   </p>
                 )}
+                {entry.location && (
+                  <p className="font-mono text-xs text-white/40">
+                    {entry.location}
+                  </p>
+                )}
               </div>
 
               <div className="sm:col-span-3">

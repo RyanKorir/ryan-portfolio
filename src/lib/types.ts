@@ -38,6 +38,7 @@ export interface Project {
   whatRyanLearned: string;
   githubUrl: string | null;
   demoUrl: string | null;
+  demoUrlSecondary?: string | null;
   roadmap: string | null;
   note?: string;
 }
@@ -48,6 +49,7 @@ export interface ExperienceEntry {
   roleLabel: string;
   type: string;
   dateRange: string;
+  location?: string;
   summary: string;
   responsibilities: string[];
   networkingConcepts?: string[];
@@ -95,6 +97,26 @@ export interface BuildLabItem {
 export interface BuildLabData {
   intro: string;
   items: BuildLabItem[];
+}
+
+export interface Certificate {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  credentialId: string;
+  type: "certificate";
+}
+
+export interface CertModule {
+  title: string;
+  issuedOn: string;
+}
+
+export interface CertificationsData {
+  intro: string;
+  certificates: Certificate[];
+  modulesInProgress: CertModule[];
 }
 
 export interface Achievement {

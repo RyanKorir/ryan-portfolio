@@ -110,6 +110,16 @@ export default function Projects({ projects }: { projects: Project[] }) {
                     View Project
                   </a>
                 )}
+                {!isPlaceholder(project.demoUrlSecondary) && (
+                  <a
+                    href={project.demoUrlSecondary ?? "#"}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm text-white/60 underline-offset-4 hover:text-white hover:underline"
+                  >
+                    Shop
+                  </a>
+                )}
               </div>
             </article>
           ))}
