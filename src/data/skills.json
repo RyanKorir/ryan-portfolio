@@ -1,0 +1,77 @@
+{
+  "categories": [
+    {
+      "id": "software-development",
+      "label": "Software & Development",
+      "skills": [
+        { "name": "Python", "level": "hands-on" },
+        { "name": "Django", "level": "hands-on" },
+        { "name": "JavaScript", "level": "working-knowledge" },
+        { "name": "TypeScript", "level": "familiar" },
+        { "name": "React", "level": "working-knowledge" },
+        { "name": "HTML", "level": "hands-on" },
+        { "name": "CSS", "level": "hands-on" },
+        { "name": "PHP", "level": "project-experience" },
+        { "name": "PostgreSQL", "level": "working-knowledge" },
+        { "name": "Firebase", "level": "familiar" },
+        { "name": "Git", "level": "hands-on" },
+        { "name": "GitHub", "level": "hands-on" },
+        { "name": "Vercel", "level": "hands-on" },
+        { "name": "XAMPP", "level": "project-experience" }
+      ]
+    },
+    {
+      "id": "ai-data",
+      "label": "AI & Data",
+      "skills": [
+        { "name": "Machine Learning", "level": "working-knowledge" },
+        { "name": "scikit-learn", "level": "project-experience" },
+        { "name": "PyTorch", "level": "familiar" },
+        { "name": "AI APIs", "level": "working-knowledge" },
+        { "name": "Local AI", "level": "working-knowledge" },
+        { "name": "Ollama", "level": "hands-on" },
+        { "name": "AI Agents", "level": "working-knowledge" },
+        { "name": "Automation", "level": "hands-on" }
+      ]
+    },
+    {
+      "id": "it-infrastructure",
+      "label": "IT & Infrastructure",
+      "skills": [
+        { "name": "Windows", "level": "hands-on" },
+        { "name": "Windows Server", "level": "working-knowledge" },
+        { "name": "IT Support", "level": "hands-on" },
+        { "name": "Troubleshooting", "level": "hands-on" },
+        { "name": "Networking", "level": "working-knowledge" },
+        { "name": "Cisco concepts", "level": "familiar" },
+        { "name": "VLANs", "level": "working-knowledge" },
+        { "name": "S-VLANs", "level": "familiar" },
+        { "name": "Port Security", "level": "familiar" },
+        { "name": "DNS", "level": "working-knowledge" },
+        { "name": "DMZ", "level": "familiar" },
+        { "name": "IP Phones", "level": "hands-on" },
+        { "name": "Device Configuration", "level": "hands-on" },
+        { "name": "Asset Management", "level": "hands-on" }
+      ]
+    },
+    {
+      "id": "professional",
+      "label": "Professional",
+      "skills": [
+        { "name": "Project Management", "level": "working-knowledge" },
+        { "name": "Problem Solving", "level": "hands-on" },
+        { "name": "Systems Thinking", "level": "hands-on" },
+        { "name": "Documentation", "level": "hands-on" },
+        { "name": "Technical Support", "level": "hands-on" },
+        { "name": "Research", "level": "hands-on" },
+        { "name": "Continuous Improvement", "level": "hands-on" }
+      ]
+    }
+  ],
+  "levelDefinitions": {
+    "familiar": "Exposed to it; basic understanding.",
+    "working-knowledge": "Comfortable using it with some guidance.",
+    "hands-on": "Regularly used in real work or projects.",
+    "project-experience": "Applied in a specific, completed project."
+  }
+}

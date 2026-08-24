@@ -1,0 +1,29 @@
+{
+  "intro": "Build Lab is where Ryan's gaming and experimental development interests live — separate from professional/client work.",
+  "items": [
+    {
+      "id": "unity-experimentation",
+      "title": "Unity Experimentation",
+      "category": "Game Development",
+      "status": "Experimental",
+      "description": "Hands-on experimentation with Unity, exploring game mechanics and interactive systems.",
+      "note": "[ADD DETAIL — specific mechanics/prototypes explored]"
+    },
+    {
+      "id": "legacy-entertainment",
+      "title": "Legacy Entertainment",
+      "category": "Game Concept",
+      "status": "Concept",
+      "description": "[ADD DESCRIPTION]",
+      "note": "Do not imply commercial release unless verified."
+    },
+    {
+      "id": "football-manager-inspired",
+      "title": "Football Manager–Inspired Systems",
+      "category": "Simulation / RPG Systems",
+      "status": "Concept",
+      "description": "Exploration of management-simulation and RPG/MMO-style systems inspired by Football Manager.",
+      "note": "[ADD DETAIL]"
+    }
+  ]
+}

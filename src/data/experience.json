@@ -1,0 +1,35 @@
+[
+  {
+    "id": "gulf-african-bank",
+    "organization": "Gulf African Bank",
+    "roleLabel": "[ADD JOB TITLE]",
+    "type": "ICT Internship / Practical Experience",
+    "dateRange": "[ADD DATES]",
+    "summary": "Practical ICT support and infrastructure exposure within a banking environment, spanning help-desk support, device deployment, documentation, and hands-on networking concepts.",
+    "responsibilities": [
+      "IT help-desk support",
+      "Troubleshooting user issues",
+      "PC setup and configuration",
+      "Deployment of new computers",
+      "Device documentation",
+      "IT asset tracking",
+      "Branch/user support",
+      "IP phone setup",
+      "Server-room organization",
+      "Cable management",
+      "Documentation and inventory work",
+      "Learning and applying networking concepts",
+      "Operational support"
+    ],
+    "networkingConcepts": [
+      "VLAN concepts",
+      "Service Provider VLAN / S-VLAN concepts",
+      "Port security",
+      "DNS",
+      "DMZ",
+      "DAC"
+    ],
+    "environment": ["Windows environments"],
+    "note": "Do not add numerical achievements, formal job titles, or dates that have not been explicitly confirmed by Ryan."
+  }
+]

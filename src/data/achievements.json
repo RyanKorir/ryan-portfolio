@@ -1,0 +1,38 @@
+[
+  {
+    "id": "first-contact",
+    "title": "First Contact",
+    "description": "You opened the contact section.",
+    "trigger": "visitor opens contact section"
+  },
+  {
+    "id": "system-explorer",
+    "title": "System Explorer",
+    "description": "You've explored Ryan's technical background.",
+    "trigger": "visitor explores About"
+  },
+  {
+    "id": "project-hunter",
+    "title": "Project Hunter",
+    "description": "You've viewed 3 projects.",
+    "trigger": "visitor views 3 projects"
+  },
+  {
+    "id": "code-diver",
+    "title": "Code Diver",
+    "description": "You dove into the GitHub projects.",
+    "trigger": "visitor opens GitHub projects"
+  },
+  {
+    "id": "full-stack-explorer",
+    "title": "Full Stack Explorer",
+    "description": "You explored multiple technology categories.",
+    "trigger": "visitor explores multiple technology categories"
+  },
+  {
+    "id": "final-boss",
+    "title": "Final Boss",
+    "description": "You reached the end of the portfolio.",
+    "trigger": "visitor reaches the end of the portfolio"
+  }
+]

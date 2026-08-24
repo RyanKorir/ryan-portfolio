@@ -1,0 +1,31 @@
+{
+  "site": {
+    "title": "Ryan Kiprotich Korir | IT Professional, Project Manager & Builder",
+    "description": "Project Manager, IT Professional, and Builder of Digital Solutions.",
+    "canonicalUrl": "[ADD CANONICAL URL ONCE DEPLOYED]"
+  },
+  "contact": {
+    "email": "[ADD EMAIL]",
+    "github": "https://github.com/RyanKorir",
+    "linkedin": "[ADD LINKEDIN]",
+    "phone": "[ADD PHONE]",
+    "website": "[ADD WEBSITE]",
+    "handle": "@ryankorir00"
+  },
+  "github": {
+    "username": "RyanKorir",
+    "note": "Confirmed by owner. GitHub Explorer should read this value rather than hardcoding it elsewhere. If the account exposes no public repositories, show the graceful fallback defined in Section 38 of the spec."
+  },
+  "featureFlags": {
+    "commandCenter": false,
+    "terminal": false,
+    "achievements": false,
+    "githubExplorer": false,
+    "portfolioAssistant": false,
+    "analytics": false
+  },
+  "analytics": {
+    "provider": null,
+    "note": "No analytics credentials hardcoded. Set provider to 'google' | 'plausible' | 'vercel' and supply env vars when ready."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Ryan Kiprotich Korir",
+  "location": "Kenya",
+  "positioningPrimary": "Project Manager • IT Professional • Software & AI Builder",
+  "positioningSecondary": "A systems-minded technologist who turns ideas into practical digital solutions.",
+  "identityTags": [
+    "Project Manager",
+    "IT Professional",
+    "Software Builder",
+    "AI/Automation Explorer",
+    "Systems Thinker"
+  ],
+  "story": "Ryan started from an Information Technology foundation and gained practical exposure through ICT support and internship work. His experience includes working with users, devices, systems, networking concepts, documentation, troubleshooting, infrastructure, and IT operations. Alongside formal IT experience, he has continuously experimented with software development, machine learning, AI assistants, web applications, automation, SaaS concepts, and game development.",
+  "philosophy": "Understand the problem → understand the system → build a solution → test it → improve it.",
+  "hero": {
+    "heading": "Ryan Kiprotich Korir",
+    "subheading": "Project Manager • IT Professional • Builder of Digital Solutions",
+    "supportingText": "I turn ideas, systems, and technology into practical solutions that work.",
+    "primaryCta": "Explore My Work",
+    "secondaryCta": "Let's Connect",
+    "optionalCta": "Enter Command Center"
+  },
+  "howIBuild": [
+    { "step": "01", "title": "DISCOVER", "description": "Understand the problem." },
+    { "step": "02", "title": "DESIGN", "description": "Map the system and solution." },
+    { "step": "03", "title": "BUILD", "description": "Create the working implementation." },
+    { "step": "04", "title": "TEST & IMPROVE", "description": "Break it, learn from it, and iterate." }
+  ],
+  "education": {
+    "degree": "Bachelor of Science in Information Technology",
+    "institution": "Multimedia University of Kenya",
+    "relevantAreas": [
+      "Databases",
+      "Management Information Systems",
+      "Human-Computer Interaction",
+      "Simulation and Modelling",
+      "Professional Issues in ICT",
+      "Software Development",
+      "Machine Learning",
+      "Networking",
+      "Systems Analysis"
+    ]
+  },
+  "photo": {
+    "status": "placeholder",
+    "note": "[ADD PROFILE PHOTO] — owner to upload. Fallback should render an RK monogram avatar."
+  }
+}
