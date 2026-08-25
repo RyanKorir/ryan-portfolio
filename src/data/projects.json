@@ -38,25 +38,25 @@
     "githubUrl": "https://github.com/RyanKorir/FarmPilot",
     "demoUrl": "https://farm-pilot-sigma.vercel.app",
     "roadmap": "Farm management, farmer workflows, data management, operational tracking, dashboards, agricultural insights, scalable SaaS architecture.",
-    "note": "Clearly separate implemented functionality from future vision. Demo link may currently show a Vercel authentication wall — pending Ryan disabling deployment protection."
+    "note": "Clearly separate implemented functionality from future vision."
   },
   {
     "id": "ayana",
-    "title": "Ayana",
+    "title": "Ayana Hill",
     "category": "Web Application",
     "status": "Built / Deployed",
     "featured": true,
-    "shortDescription": "[ADD DESCRIPTION — Ryan to provide what Ayana is]",
-    "problem": "[ADD DETAIL]",
-    "solution": "[ADD DETAIL]",
-    "technologies": ["[ADD STACK]"],
-    "currentState": "Deployed with two live surfaces: a main app and a separate shop view.",
+    "shortDescription": "A live e-commerce site for Ayana Hill, a beauty and everyday-essentials shop in Kericho, Kenya.",
+    "problem": "A local beauty and essentials retailer needed an online presence to showcase products and reach customers beyond foot traffic.",
+    "solution": "A static marketing + catalog site covering fragrances, hair products, skincare/body care, and sandals, with countrywide delivery messaging and a WhatsApp contact path.",
+    "technologies": ["HTML", "CSS", "Vanilla JavaScript", "Google Fonts"],
+    "currentState": "Deployed with two live surfaces: a main site and a shop-focused view. Real business copy and product categories are live.",
     "whatRyanLearned": "[ADD DETAIL]",
     "githubUrl": "https://github.com/RyanKorir/Ayana",
     "demoUrl": "https://ayana-rosy.vercel.app",
     "demoUrlSecondary": "https://ayana-shop.vercel.app",
     "roadmap": null,
-    "note": "Added at Ryan's confirmation. Description pending — do not guess at what this project does."
+    "note": null
   },
   {
     "id": "joyland-clinic-chatbot",
@@ -107,7 +107,7 @@
     "githubUrl": "https://github.com/RyanKorir/SwiftSell",
     "demoUrl": "https://swift-sell-drab.vercel.app",
     "roadmap": "Superseded in concept by SwiftSell v2 (see below), which is not yet complete.",
-    "note": "Demo link may currently show a Vercel authentication wall — pending Ryan disabling deployment protection."
+    "note": null
   },
   {
     "id": "swiftsell-v2",
