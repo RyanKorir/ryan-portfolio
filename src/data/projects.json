@@ -101,13 +101,13 @@
     "shortDescription": "A web application product built and deployed as Ryan's first complete version of SwiftSell.",
     "problem": "[ADD DETAIL]",
     "solution": "[ADD DETAIL]",
-    "technologies": ["Vite", "[ADD FULL STACK — verify via repo]"],
-    "currentState": "Built and deployed. This is the completed v1 of the product.",
+    "technologies": ["React", "Vite", "TypeScript", "Firebase", "Tailwind CSS", "TanStack Query", "Recharts"],
+    "currentState": "Built and deployed. This is the completed v1 of the product — inventory, orders, customers, and finance tracking, plus an (incomplete/unwired) Google Sheets export feature.",
     "whatRyanLearned": "[ADD DETAIL]",
-    "githubUrl": "https://github.com/RyanKorir/SwiftSell",
+    "githubUrl": null,
     "demoUrl": "https://swift-sell-drab.vercel.app",
-    "roadmap": "Superseded in concept by SwiftSell v2 (see below), which is not yet complete.",
-    "note": null
+    "roadmap": "Superseded by SwiftSell v2, which carries forward and completes the Google Sheets export concept from v1 with real working OAuth, alongside a Supabase backend and an expanded theming system.",
+    "note": "GitHub link omitted: the public repo for this project contains no source code, and the repo with the real source is private."
   },
   {
     "id": "swiftsell-v2",
