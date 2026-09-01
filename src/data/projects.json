@@ -122,7 +122,7 @@
     "currentState": "Deployed but not functionally complete — Google account creation/sign-in does not work because the Firebase/Supabase data storage layer for OAuth was never finished. The OAuth integration was ultimately scrapped in its current form.",
     "whatRyanLearned": "[ADD DETAIL — pending a proper debugging pass]",
     "githubUrl": "https://github.com/RyanKorir/SwiftSell-v.2.0",
-    "demoUrl": "https://swift-sell-v-2-1.vercel.app",
+    "demoUrl": "https://swift-sell-v-2-0.vercel.app",
     "roadmap": "Fix the Google OAuth flow by properly wiring up Firebase or Supabase for auth/session storage.",
     "note": "Shown honestly as incomplete rather than presented as a finished product, per portfolio content rules."
   },
