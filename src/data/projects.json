@@ -24,6 +24,29 @@
     "note": "Do not claim full autonomy unless the implementation actually supports it. Treat as the flagship/featured project."
   },
   {
+    "id": "netcalc",
+    "title": "NetCalc",
+    "category": "Networking / Developer Tool",
+    "status": "Live",
+    "featured": true,
+    "shortDescription": "A browser-based networking toolkit — subnet calculator, VLAN planner, and CIDR reference table. Built in a single session, deployed to GitHub Pages.",
+    "problem": "Network engineers and IT professionals constantly need to calculate subnet parameters, plan VLAN schemes, and look up CIDR prefixes — usually switching between multiple tools or relying on memory.",
+    "solution": "A pure client-side web app that consolidates three essential networking tools: a full subnet calculator with binary breakdown and subnet divider, a VLAN planner with Cisco IOS config export, and a searchable /0–/32 CIDR reference table. Includes an interactive 10-lesson tutorial for newcomers and a full instruction manual.",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Vanilla JavaScript",
+      "GitHub Actions",
+      "GitHub Pages"
+    ],
+    "currentState": "Live and deployed. All three tools are functional: subnet calculator with binary visualisation and subnet division, VLAN planner with auto-subnet allocation and Cisco IOS export, CIDR reference with live search and size filters, and a 10-lesson interactive tutorial with progress tracking.",
+    "whatRyanLearned": "32-bit unsigned integer IP math from scratch, binary subnet visualisation, GitHub Actions Pages deployment workflow, and how to ship a complete working tool — with docs — in a single focused session.",
+    "githubUrl": "https://github.com/RyanKorir/netcalc",
+    "demoUrl": "https://ryankorir.github.io/netcalc/",
+    "roadmap": "IPv6 support, ping/traceroute visualiser, export to CSV, and a network diagram generator.",
+    "note": null
+  },
+  {
     "id": "farmpilot",
     "title": "FarmPilot",
     "category": "AgriTech / SaaS",
