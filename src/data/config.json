@@ -2,14 +2,14 @@
   "site": {
     "title": "Ryan Kiprotich Korir | IT Professional, Project Manager & Builder",
     "description": "Project Manager, IT Professional, and Builder of Digital Solutions.",
-    "canonicalUrl": "[ADD CANONICAL URL ONCE DEPLOYED]"
+    "canonicalUrl": "https://ryan-portfolio-ryankorirs-projects.vercel.app"
   },
   "contact": {
     "email": "ryankorir00@gmail.com",
     "github": "https://github.com/RyanKorir",
     "linkedin": "https://www.linkedin.com/in/ryan-korir-541ab4251/",
     "phone": "+254790971791",
-    "website": "[ADD WEBSITE]",
+    "website": "https://ryan-portfolio-ryankorirs-projects.vercel.app",
     "handle": "@ryankorir00"
   },
   "github": {
