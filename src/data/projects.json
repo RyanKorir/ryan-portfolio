@@ -47,6 +47,29 @@
     "note": null
   },
   {
+    "id": "bincalc",
+    "title": "BinCalc",
+    "category": "Developer Tool / Educational",
+    "status": "Live",
+    "featured": true,
+    "shortDescription": "A binary calculator and converter that teaches as it calculates — binary arithmetic, hex/octal conversion, bitwise operations, and step-by-step breakdowns, all in the browser.",
+    "problem": "Binary, hexadecimal, and bitwise operations are core to networking, programming, and IT — but most calculators just give you the answer without explaining how they got there, which doesn't help you actually learn the concepts.",
+    "solution": "BinCalc is a pure client-side tool with three modes: a Calculator that performs binary arithmetic (+ − × ÷) and immediately shows the result in Binary, Decimal, Hex, and Octal with a full carry/borrow step-by-step breakdown; a Converter where typing in any base updates all four representations instantly with a powers-of-2 explanation; and a Bitwise mode (AND, OR, XOR, NOT) that renders a colour-coded per-bit truth table so you can see exactly what happened at each position.",
+    "technologies": [
+      "HTML5",
+      "CSS3 (custom properties, CSS Grid)",
+      "Vanilla JavaScript",
+      "JetBrains Mono (typography)",
+      "Vercel"
+    ],
+    "currentState": "Live and deployed. Calculator, Converter, and Bitwise tabs are all fully functional. Features input validation, keyboard support (Enter to calculate), calculation history (last 20 ops), one-click copy, and a fully responsive layout down to mobile.",
+    "whatRyanLearned": "Binary arithmetic from first principles — implementing carry propagation, signed subtraction, and unsigned 32-bit NOT in JavaScript without any libraries. Also practised writing a complete, polished vanilla JS app with zero dependencies: state management, tab routing, real-time input validation, clipboard API, and accessible markup, all in a single self-contained file set.",
+    "githubUrl": "https://github.com/RyanKorir/BinnaryCalc",
+    "demoUrl": "https://bincalc-ryankorir00-4850s-projects.vercel.app",
+    "roadmap": "8/16/32-bit two's complement mode, dark/light theme toggle, keyboard shortcuts panel, and a binary floating-point (IEEE 754) visualiser.",
+    "note": "Complements NetCalc — while NetCalc handles IP/subnet math, BinCalc handles the raw binary and bitwise layer beneath it."
+  },
+  {
     "id": "farmpilot",
     "title": "FarmPilot",
     "category": "AgriTech / SaaS",
@@ -55,7 +78,9 @@
     "shortDescription": "An agriculture technology concept intended to become a scalable multi-user SaaS platform.",
     "problem": "Farmers and agricultural operations often lack accessible digital tools for managing workflows and data.",
     "solution": "A SaaS concept exploring farm management, farmer workflows, data management, operational tracking, dashboards, and agricultural insights.",
-    "technologies": ["[ADD STACK ONCE CONFIRMED]"],
+    "technologies": [
+      "[ADD STACK ONCE CONFIRMED]"
+    ],
     "currentState": "Concept / early development. Implemented functionality is limited — most capability described here is future vision, not shipped features.",
     "whatRyanLearned": "[ADD DETAIL]",
     "githubUrl": "https://github.com/RyanKorir/FarmPilot",
@@ -72,7 +97,14 @@
     "shortDescription": "A polished static storefront for Ayana Hill — a beauty and essentials shop in Kericho, Kenya — built with zero frameworks and deployed live.",
     "problem": "A local beauty and essentials retailer needed a professional online presence to showcase products and attract customers beyond walk-in foot traffic.",
     "solution": "A fully responsive three-page static site (Home, Products, About & Contact) built in plain HTML, CSS, and vanilla JavaScript. Features a data-driven product catalog, ambient cherry-blossom petal animations, tap-triggered petal bursts, a spinning 'We're Open' badge on desktop, magnifying detail lenses on product cards, and a WhatsApp contact path — all with no frameworks or build tools.",
-    "technologies": ["HTML", "CSS", "Vanilla JavaScript", "Google Fonts", "Vercel", "GitHub"],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Vanilla JavaScript",
+      "Google Fonts",
+      "Vercel",
+      "GitHub"
+    ],
     "currentState": "Live and auto-deployed from GitHub via Vercel. Products page, About & Contact page, and all interactions are fully functional. Continuously iterated with new UI polish.",
     "whatRyanLearned": "How to build rich, interactive UI without any framework — using CSS animations, SVG, and vanilla JS for effects like ambient particles, touch bursts, and magnify lenses. Learned fluid responsive design with clamp() and CSS Grid, clean deployment pipelines with Vercel, and how to structure a data-driven catalog that scales without touching markup.",
     "githubUrl": "https://github.com/RyanKorir/Ayana",
@@ -90,7 +122,12 @@
     "shortDescription": "A research project exploring a chatbot for clinic-related interaction and information.",
     "problem": "[ADD DETAIL — what interaction gap the chatbot explored]",
     "solution": "A Django-based chatbot exploring clinic-related interaction and information delivery.",
-    "technologies": ["Django", "Python", "Web development", "Chatbot concepts"],
+    "technologies": [
+      "Django",
+      "Python",
+      "Web development",
+      "Chatbot concepts"
+    ],
     "currentState": "Academic / research project.",
     "whatRyanLearned": "[ADD DETAIL]",
     "githubUrl": null,
@@ -107,7 +144,13 @@
     "shortDescription": "A machine-learning web application exploring symptom-based prognosis prediction.",
     "problem": "[ADD DETAIL]",
     "solution": "A trained ML model integrated into a Django web app, processing symptom data to predict a prognosis.",
-    "technologies": ["Python", "Django", "scikit-learn", "Dataset processing", "Model training"],
+    "technologies": [
+      "Python",
+      "Django",
+      "scikit-learn",
+      "Dataset processing",
+      "Model training"
+    ],
     "currentState": "Academic / experimental machine-learning system.",
     "whatRyanLearned": "[ADD DETAIL]",
     "githubUrl": null,
@@ -124,7 +167,15 @@
     "shortDescription": "A web application product built and deployed as Ryan's first complete version of SwiftSell.",
     "problem": "[ADD DETAIL]",
     "solution": "[ADD DETAIL]",
-    "technologies": ["React", "Vite", "TypeScript", "Firebase", "Tailwind CSS", "TanStack Query", "Recharts"],
+    "technologies": [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Firebase",
+      "Tailwind CSS",
+      "TanStack Query",
+      "Recharts"
+    ],
     "currentState": "Built and deployed. This is the completed v1 of the product — inventory, orders, customers, and finance tracking, plus an (incomplete/unwired) Google Sheets export feature.",
     "whatRyanLearned": "[ADD DETAIL]",
     "githubUrl": null,
@@ -141,7 +192,18 @@
     "shortDescription": "A business management platform for inventory, orders, customers, and finances — with real-time sync across devices, Google sign-in, and a fully custom glass + gamer HUD interface.",
     "problem": "SwiftSell v1 was a working prototype but had a broken data layer, no real authentication, and a static interface. It needed a proper backend, real data integrity guarantees, and an interface that didn't feel like a generic admin template.",
     "solution": "Rebuilt on Supabase (Postgres + Row Level Security) with Google OAuth sign-in, atomic database functions for order creation/cancellation (preventing stock and revenue figures from ever going out of sync), live real-time updates across devices via Supabase Realtime, CSV import/export, and a custom-designed interface with 10 switchable color schemes, a bottom-nav mobile experience modeled on WhatsApp/Instagram/X, and an animated live dashboard.",
-    "technologies": ["React", "TypeScript", "Vite", "Supabase (Postgres, Auth, Row Level Security, Realtime)", "Google OAuth", "TanStack Query", "Tailwind CSS v4", "Framer Motion", "Recharts", "Papaparse (CSV)"],
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Supabase (Postgres, Auth, Row Level Security, Realtime)",
+      "Google OAuth",
+      "TanStack Query",
+      "Tailwind CSS v4",
+      "Framer Motion",
+      "Recharts",
+      "Papaparse (CSV)"
+    ],
     "currentState": "Deployed and functional: inventory, orders, customers, and expense tracking all work end-to-end, with atomic stock/revenue accounting verified directly against the live database. Google sign-in works for approved test accounts while the app awaits Google's OAuth verification review to open sign-in to any user. Live sync, CSV import/export, and an optional Google Sheets export are all working.",
     "whatRyanLearned": "Why client-side read-then-write logic is unsafe for financial data, and how to fix it properly with atomic Postgres functions instead of patchwork client checks. Also: Row Level Security design, real-time subscriptions, and OAuth verification requirements (privacy policy, domain ownership, scope justification) that most tutorials skip over.",
     "githubUrl": "https://github.com/RyanKorir/SwiftSell-v.2.0",
@@ -158,7 +220,12 @@
     "shortDescription": "An early practical software-development project implementing business/billing workflows.",
     "problem": "[ADD DETAIL]",
     "solution": "A PHP/XAMPP-based system implementing CRUD and business workflows for billing.",
-    "technologies": ["PHP", "XAMPP", "Database", "CRUD / business workflows"],
+    "technologies": [
+      "PHP",
+      "XAMPP",
+      "Database",
+      "CRUD / business workflows"
+    ],
     "currentState": "Built as an academic project.",
     "whatRyanLearned": "[ADD DETAIL]",
     "githubUrl": null,
