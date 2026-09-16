@@ -70,6 +70,30 @@
     "note": "Complements NetCalc — while NetCalc handles IP/subnet math, BinCalc handles the raw binary and bitwise layer beneath it."
   },
   {
+    "id": "binarygame",
+    "title": "BinaryGame",
+    "category": "Educational Game / Developer Tool",
+    "status": "Live",
+    "featured": true,
+    "shortDescription": "A browser-based binary numbers game with four modes — Classic, Reverse, IP Mode, and Blitz — inspired by the Cisco binary game. Race the clock, build streaks, and beat your high score.",
+    "problem": "Binary and IP addressing are fundamental to networking and IT, but they're hard to internalise by just reading. You need to drill them until the patterns are instant — which is exactly what a game format achieves.",
+    "solution": "BinaryGame presents four distinct challenge modes: Classic (flip 8 bits to match a decimal target), Reverse (read a binary pattern and type its decimal value), IP Mode (convert each octet of a random IPv4 address to binary one at a time), and Blitz (60 seconds of Classic with no breaks). Each correct answer earns points plus a streak bonus, and remaining time is converted into a time bonus at the end. High scores are saved locally per mode and difficulty. Three difficulty levels (Easy 0–15, Medium 0–127, Hard 0–255) keep it useful whether you're a beginner or drilling for a Cisco exam.",
+    "technologies": [
+      "HTML5",
+      "CSS3 (CSS custom properties, clamp(), dvh units)",
+      "Vanilla JavaScript",
+      "localStorage (high scores)",
+      "Space Grotesk + JetBrains Mono (typography)",
+      "Vercel"
+    ],
+    "currentState": "Live and fully playable. All four game modes work end-to-end with timer, score, streak, time bonus, high-score persistence, and a result screen. Responsive down to mobile with touch-friendly bit buttons.",
+    "whatRyanLearned": "Building game loop logic in vanilla JS — timer management, screen state transitions, streak multipliers, and localStorage persistence — without any framework. Also learned how to make bit-toggle buttons feel responsive and tactile with CSS transitions and active-state scaling.",
+    "githubUrl": "https://github.com/RyanKorir/BinaryGame",
+    "demoUrl": "https://binarygame-ryankorir00-4850s-projects.vercel.app",
+    "roadmap": "Sound effects on correct/wrong answers, a global leaderboard using a lightweight backend, a hex-to-decimal challenge mode, and a subnet masking drill where you have to identify network vs host bits.",
+    "note": "Companion to BinCalc — the game drills the speed, the calculator explains the maths."
+  },
+  {
     "id": "farmpilot",
     "title": "FarmPilot",
     "category": "AgriTech / SaaS",
