@@ -94,6 +94,31 @@
     "note": "Companion to BinCalc — the game drills the speed, the calculator explains the maths."
   },
   {
+    "id": "skybound-sprint",
+    "title": "Skybound Sprint",
+    "category": "2D Browser Platformer Game",
+    "status": "Live (MVP)",
+    "featured": true,
+    "shortDescription": "A fast-paced 2D browser platformer inspired by Mario, Celeste, and Rayman. One polished level with enemies, secrets, collectibles, combos, checkpoints, moving platforms, and a full grading system. No assets — everything generated procedurally.",
+    "problem": "Building a fun browser game entirely without external assets: no sprites, no audio files, no external dependencies beyond the Phaser engine. The challenge was proving that a fully playable, game-feel-complete platformer could be built with only Canvas API art and Web Audio API sound.",
+    "solution": "Skybound Sprint is a complete Phaser 3 platformer built with 2,000 lines of vanilla JavaScript across 8 modular scene files. All 20+ sprites are drawn procedurally via the HTML5 Canvas API in BootScene. All sounds — jump, land, stomp, damage, collectibles, checkpoint, win, death — and a looping chiptune track are synthesised live via the Web Audio API. The level is a 3,200-unit scrolling world with: a tutorial section, 3 collectible tiers (Stars/Crystals/Relics), 2 enemy types (Walker patrol + Flyer sine-wave), a hidden secret area behind a breakable block, a risky cloud platform route with rare rewards, 2 checkpoints, moving platforms, spike hazards, and a glowing portal goal. The combo system multiplies score for consecutive pickups. Completion awards an S–D rank grade based on time, deaths, and collectibles.",
+    "technologies": [
+      "Phaser 3 (HTML5 game framework)",
+      "Vanilla JavaScript (ES6)",
+      "HTML5 Canvas API (all sprites drawn procedurally)",
+      "Web Audio API (all sound and music synthesised)",
+      "Arcade Physics",
+      "localStorage (high score + best time)",
+      "GitHub Pages (hosting)"
+    ],
+    "currentState": "Fully playable MVP. Main menu, gameplay, pause, game-over, and win screens all complete. Touch controls work on mobile. Responsive via Phaser Scale.FIT. High scores and best times saved locally. S/A/B/C/D rank grading on completion.",
+    "whatRyanLearned": "Phaser 3 scene management, arcade physics tuning (gravity, drag, air control, squash-and-stretch), procedural Canvas sprite generation, Web Audio oscillator synthesis for game SFX and music, parallax scrolling with tileSprite and scroll factors, overlap vs collider physics in Phaser, and game loop architecture with event-driven UI communication between scenes.",
+    "githubUrl": "https://github.com/RyanKorir/SkyboundSprint",
+    "demoUrl": "https://ryankorir.github.io/SkyboundSprint/",
+    "roadmap": "V2 adds double-jump, dash, and wall-jump abilities. V3 adds 3–5 more levels across different biomes (Crystal Caves, Sky Islands, Volcanic Realm). V4 adds local co-op. Leaderboard via Supabase in V5.",
+    "note": "Built fully from scratch in a single session — zero external game assets, zero build step. Open index.html in any browser to play."
+  },
+  {
     "id": "farmpilot",
     "title": "FarmPilot",
     "category": "AgriTech / SaaS",
