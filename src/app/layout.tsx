@@ -7,6 +7,7 @@ import "@fontsource/inter/500.css";
 import "@fontsource/jetbrains-mono/400.css";
 import "@fontsource/jetbrains-mono/500.css";
 import { getConfig } from "@/lib/data";
+import BackgroundFx from "@/components/BackgroundFx";
 import "./globals.css";
 
 const config = getConfig();
@@ -40,6 +41,7 @@ export default function RootLayout({
         >
           Skip to main content
         </a>
+        <BackgroundFx />
         {children}
       </body>
     </html>

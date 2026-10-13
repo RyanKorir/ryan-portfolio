@@ -50,7 +50,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
           {visible.map((project) => (
             <article
               key={project.id}
-              className="flex flex-col justify-between rounded-lg border border-white/10 bg-charcoal-900/60 p-6 transition hover:border-white/25"
+              className="flex flex-col justify-between rounded-lg border border-white/10 bg-charcoal-900/60 p-6 transition duration-300 hover:-translate-y-1 hover:border-accent-cyan/40 hover:shadow-[0_0_30px_-8px_rgba(34,211,238,0.35)]"
             >
               <div>
                 <div className="flex items-start justify-between gap-3">

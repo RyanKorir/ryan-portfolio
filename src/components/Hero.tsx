@@ -2,94 +2,111 @@
 
 import { useEffect, useState } from "react";
 import type { Profile } from "@/lib/types";
+import Skyline from "./Skyline";
 
-const BOOT_LINES = [
-  { label: "PLAYER", getValue: (p: Profile) => p.name.toUpperCase() },
-  { label: "ROLE", getValue: () => "IT / PROJECTS / AI / BUILDER" },
-  { label: "LOCATION", getValue: (p: Profile) => p.location.toUpperCase() },
-  { label: "SYSTEM STATUS", getValue: () => "ONLINE" }
-];
-
-export default function Hero({ profile }: { profile: Profile }) {
-  const [visibleLines, setVisibleLines] = useState(0);
+function useTypedRoles(roles: string[]) {
+  const [text, setText] = useState("");
 
   useEffect(() => {
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
+    if (roles.length === 0) return;
 
-    if (prefersReducedMotion) {
-      setVisibleLines(BOOT_LINES.length);
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setText(roles.join(" • "));
       return;
     }
 
-    const timers = BOOT_LINES.map((_, i) =>
-      setTimeout(() => setVisibleLines(i + 1), 250 * (i + 1))
-    );
-    return () => timers.forEach(clearTimeout);
-  }, []);
+    let role = 0;
+    let count = 0;
+    let deleting = false;
+    let timer: ReturnType<typeof setTimeout>;
+
+    const tick = () => {
+      const full = roles[role];
+      count += deleting ? -1 : 1;
+      setText(full.slice(0, count));
+
+      let delay = deleting ? 35 : 70;
+      if (!deleting && count === full.length) {
+        deleting = true;
+        delay = 1700;
+      } else if (deleting && count === 0) {
+        deleting = false;
+        role = (role + 1) % roles.length;
+        delay = 350;
+      }
+      timer = setTimeout(tick, delay);
+    };
+
+    timer = setTimeout(tick, 600);
+    return () => clearTimeout(timer);
+  }, [roles]);
+
+  return text;
+}
+
+export default function Hero({ profile, githubUrl }: { profile: Profile; githubUrl?: string }) {
+  const roles = profile.positioningPrimary.split(" • ").filter(Boolean);
+  const typed = useTypedRoles(roles);
+
+  const nameParts = profile.name.split(" ");
+  const first = nameParts[0];
+  const last = nameParts[nameParts.length - 1];
 
   return (
     <section
       id="top"
-      className="relative overflow-hidden border-b border-white/5 px-6 pb-20 pt-28 sm:pt-36"
+      className="relative flex min-h-[90vh] items-center overflow-hidden px-6 pb-40 pt-28 sm:pb-56 sm:pt-32"
     >
-      {/* subtle grid backdrop */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.07]"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
-          backgroundSize: "48px 48px"
-        }}
-      />
+      <div aria-hidden className="hero-beam" />
+      <Skyline />
 
-      <div className="relative mx-auto max-w-3xl">
-        <div className="rounded-lg border border-white/10 bg-charcoal-900/60 p-5 font-mono text-sm">
-          {BOOT_LINES.slice(0, visibleLines).map((line) => (
-            <div key={line.label} className="flex gap-3 py-0.5">
-              <span className="text-white/40">{line.label}:</span>
-              <span
-                className={
-                  line.label === "SYSTEM STATUS"
-                    ? "text-accent-green"
-                    : "text-accent-cyan"
-                }
-              >
-                {line.getValue(profile)}
-              </span>
-            </div>
-          ))}
-          <span
-            aria-hidden
-            className="mt-1 inline-block h-4 w-2 animate-pulse bg-accent-cyan align-middle"
-          />
-        </div>
-
-        <h1 className="mt-10 font-display text-4xl font-semibold leading-tight text-white sm:text-6xl">
-          {profile.hero.heading}
-        </h1>
-        <p className="mt-4 text-lg text-white/70 sm:text-xl">
-          {profile.hero.subheading}
+      <div className="relative z-10 mx-auto w-full max-w-6xl">
+        <p className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.25em] text-accent-green">
+          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent-green" />
+          System status: online · {profile.location}
         </p>
-        <p className="mt-2 max-w-xl text-white/50">
+
+        <h1
+          aria-label={profile.name}
+          className="mt-6 font-display font-bold uppercase leading-[0.88] tracking-tight"
+        >
+          <span aria-hidden className="block text-6xl text-white sm:text-8xl lg:text-9xl">
+            {first}
+          </span>
+          <span aria-hidden className="text-outline block text-6xl sm:text-8xl lg:text-9xl">
+            {last}
+          </span>
+        </h1>
+
+        <p className="mt-8 font-mono text-base sm:text-lg" aria-hidden>
+          <span className="text-accent-cyan/80">ryan@portfolio</span>
+          <span className="text-white/40">:~$ </span>
+          <span className="text-white">{typed}</span>
+          <span className="caret" />
+        </p>
+        <p className="sr-only">{profile.positioningPrimary}</p>
+
+        <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/60">
           {profile.hero.supportingText}
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-4">
-          <a
-            href="#projects"
-            className="rounded-md bg-accent-blue px-5 py-3 text-sm font-medium text-white transition hover:bg-accent-blue/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-cyan"
-          >
-            {profile.hero.primaryCta}
+        <div className="mt-10 flex flex-wrap items-center gap-4">
+          <a href="#projects" className="btn-clip btn-clip-primary">
+            {profile.hero.primaryCta} <span aria-hidden>↗</span>
           </a>
-          <a
-            href="#contact"
-            className="rounded-md border border-white/15 px-5 py-3 text-sm font-medium text-white transition hover:border-white/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-cyan"
-          >
+          <a href="#contact" className="btn-clip btn-clip-ghost">
             {profile.hero.secondaryCta}
           </a>
+          {githubUrl && (
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="font-mono text-xs uppercase tracking-widest text-white/50 transition hover:text-accent-cyan"
+            >
+              GitHub ↗
+            </a>
+          )}
         </div>
       </div>
     </section>

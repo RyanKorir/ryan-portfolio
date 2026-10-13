@@ -32,3 +32,193 @@ html {
 body {
   @apply bg-navy-950 text-white;
 }
+
+/* ---------- Atmosphere & motion ---------- */
+
+/* Page content sits above the fixed background canvas. */
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Outlined display type for the surname. */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 2px #22d3ee;
+  text-shadow: 0 0 40px rgba(34, 211, 238, 0.35);
+}
+
+@media (max-width: 640px) {
+  .text-outline {
+    -webkit-text-stroke-width: 1.5px;
+  }
+}
+
+/* Blinking terminal caret. */
+.caret {
+  display: inline-block;
+  width: 0.55ch;
+  height: 1.1em;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  background: #22d3ee;
+  animation: caret-blink 1s steps(1) infinite;
+}
+
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Clipped-corner buttons. */
+.btn-clip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 14px) 0,
+    100% 14px,
+    100% 100%,
+    14px 100%,
+    0 calc(100% - 14px)
+  );
+  transition: transform 0.2s, filter 0.2s, background 0.2s, color 0.2s;
+}
+
+.btn-clip:hover {
+  transform: translateY(-2px);
+}
+
+.btn-clip-primary {
+  background: #22d3ee;
+  color: #07101c;
+}
+
+.btn-clip-primary:hover {
+  filter: brightness(1.12);
+}
+
+.btn-clip-ghost {
+  color: #fff;
+  background: linear-gradient(rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07)),
+    rgba(34, 211, 238, 0.08);
+}
+
+.btn-clip-ghost:hover {
+  background: rgba(34, 211, 238, 0.2);
+}
+
+/* Outline would be clipped by clip-path, so show focus with a fill change. */
+.btn-clip:focus-visible {
+  outline: none;
+  background: #fff;
+  color: #07101c;
+}
+
+/* Swaying light beam in the hero. */
+.hero-beam {
+  position: absolute;
+  top: -2rem;
+  right: 6%;
+  width: min(46vw, 640px);
+  height: 78%;
+  pointer-events: none;
+  transform-origin: 50% 0;
+  animation: beam-sway 11s ease-in-out infinite;
+}
+
+.hero-beam::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(46% 0, 54% 0, 100% 100%, 0 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(34, 211, 238, 0.26),
+    rgba(34, 211, 238, 0.06) 60%,
+    transparent
+  );
+}
+
+.hero-beam::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  width: 130px;
+  height: 130px;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.5), transparent 70%);
+  filter: blur(6px);
+}
+
+@keyframes beam-sway {
+  0%,
+  100% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-beam {
+    right: -15%;
+    width: 90vw;
+    opacity: 0.6;
+  }
+}
+
+/* Skyline windows. */
+.win {
+  fill: #67e8f9;
+  opacity: 0.5;
+}
+
+.win-blink {
+  animation: win-blink var(--d, 5s) ease-in-out infinite;
+}
+
+@keyframes win-blink {
+  0%,
+  100% {
+    opacity: 0.06;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Sections ease in as they scroll into view. Pure CSS (scroll-driven
+   animation) so there is no JS cost; browsers without support simply show
+   the content normally. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    main > section:not(#top) > div {
+      animation: reveal-up linear both;
+      animation-timeline: view();
+      animation-range: entry 5% entry 45%;
+    }
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
