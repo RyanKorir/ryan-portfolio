@@ -45,6 +45,29 @@ export default function Certifications({ data }: { data: CertificationsData }) {
                 </div>
               ))}
             </div>
+
+            {data.inProgress && data.inProgress.length > 0 && (
+              <>
+                <p className="mt-8 font-mono text-xs uppercase tracking-[0.2em] text-white/40">
+                  In progress
+                </p>
+                <div className="mt-4 space-y-4">
+                  {data.inProgress.map((item) => (
+                    <div
+                      key={item.id}
+                      className="rounded-lg border border-accent-green/25 bg-charcoal-900/60 p-5"
+                    >
+                      <p className="font-display text-base font-semibold text-white">{item.title}</p>
+                      <p className="mt-1 text-sm text-white/60">{item.issuer}</p>
+                      <p className="mt-2 flex items-center gap-2 font-mono text-xs text-accent-green">
+                        <span aria-hidden className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent-green" />
+                        Ongoing · expected {item.expectedLabel}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
 
           <div>

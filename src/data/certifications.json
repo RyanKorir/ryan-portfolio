@@ -2,14 +2,6 @@
   "intro": "Certifications and coursework in cloud, network, and cybersecurity.",
   "certificates": [
     {
-      "id": "cyber-shujaa-cloud-network-security",
-      "title": "Cloud & Network Security",
-      "issuer": "Cyber Shujaa",
-      "date": "2026-09-01",
-      "dateLabel": "Sep 2026",
-      "type": "certificate"
-    },
-    {
       "id": "cisco-packet-tracer-getting-started",
       "title": "Getting Started with Cisco Packet Tracer",
       "issuer": "Cisco Networking Academy",
@@ -34,6 +26,14 @@
     {
       "title": "Network Basics",
       "issuedOn": "2026-08-19"
+    }
+  ],
+  "inProgress": [
+    {
+      "id": "cyber-shujaa-cloud-network-security",
+      "title": "Cloud & Network Security",
+      "issuer": "Cyber Shujaa",
+      "expectedLabel": "Dec 2026"
     }
   ]
 }

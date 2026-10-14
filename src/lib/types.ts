@@ -111,6 +111,13 @@ export interface Certificate {
   type: "certificate";
 }
 
+export interface InProgressCert {
+  id: string;
+  title: string;
+  issuer: string;
+  expectedLabel: string;
+}
+
 export interface CertModule {
   title: string;
   issuedOn: string;
@@ -119,6 +126,7 @@ export interface CertModule {
 export interface CertificationsData {
   intro: string;
   certificates: Certificate[];
+  inProgress?: InProgressCert[];
   modulesInProgress: CertModule[];
 }
 
