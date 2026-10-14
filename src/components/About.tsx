@@ -20,7 +20,10 @@ export default function About({ profile }: { profile: Profile }) {
                 Education
               </p>
               <p className="mt-2 text-white">{profile.education.degree}</p>
-              <p className="text-white/60">{profile.education.institution}</p>
+              <p className="text-white/60">
+                {profile.education.institution}
+                {profile.education.years ? ` · ${profile.education.years}` : ""}
+              </p>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {profile.education.relevantAreas.map((area) => (
                   <li
@@ -32,6 +35,24 @@ export default function About({ profile }: { profile: Profile }) {
                 ))}
               </ul>
             </div>
+
+            {profile.interests && profile.interests.length > 0 && (
+              <div className="mt-10">
+                <p className="font-mono text-xs uppercase tracking-[0.2em] text-white/40">
+                  Interests
+                </p>
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {profile.interests.map((interest) => (
+                    <li
+                      key={interest}
+                      className="rounded-full border border-accent-blue/30 px-3 py-1 text-xs text-accent-cyan"
+                    >
+                      {interest}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
 
           <div className="lg:col-span-2">

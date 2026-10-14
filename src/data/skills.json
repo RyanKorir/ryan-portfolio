@@ -4,67 +4,266 @@
       "id": "software-development",
       "label": "Software & Development",
       "skills": [
-        { "name": "Python", "level": "hands-on" },
-        { "name": "Django", "level": "hands-on" },
-        { "name": "JavaScript", "level": "hands-on" },
-        { "name": "TypeScript", "level": "familiar" },
-        { "name": "React", "level": "working-knowledge" },
-        { "name": "HTML", "level": "hands-on" },
-        { "name": "CSS", "level": "hands-on" },
-        { "name": "PHP", "level": "project-experience" },
-        { "name": "PostgreSQL", "level": "working-knowledge" },
-        { "name": "Firebase", "level": "familiar" },
-        { "name": "Git", "level": "hands-on" },
-        { "name": "GitHub", "level": "hands-on" },
-        { "name": "Vercel", "level": "hands-on" },
-        { "name": "XAMPP", "level": "project-experience" }
+        {
+          "name": "Python",
+          "level": "hands-on"
+        },
+        {
+          "name": "Django",
+          "level": "hands-on"
+        },
+        {
+          "name": "JavaScript",
+          "level": "hands-on"
+        },
+        {
+          "name": "TypeScript",
+          "level": "familiar"
+        },
+        {
+          "name": "React",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "HTML",
+          "level": "hands-on"
+        },
+        {
+          "name": "CSS",
+          "level": "hands-on"
+        },
+        {
+          "name": "PHP",
+          "level": "project-experience"
+        },
+        {
+          "name": "PostgreSQL",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "Firebase",
+          "level": "familiar"
+        },
+        {
+          "name": "Git",
+          "level": "hands-on"
+        },
+        {
+          "name": "GitHub",
+          "level": "hands-on"
+        },
+        {
+          "name": "Vercel",
+          "level": "hands-on"
+        },
+        {
+          "name": "XAMPP",
+          "level": "project-experience"
+        }
       ]
     },
     {
       "id": "ai-data",
       "label": "AI & Data",
       "skills": [
-        { "name": "Machine Learning", "level": "working-knowledge" },
-        { "name": "scikit-learn", "level": "project-experience" },
-        { "name": "PyTorch", "level": "familiar" },
-        { "name": "AI APIs", "level": "working-knowledge" },
-        { "name": "Local AI", "level": "working-knowledge" },
-        { "name": "Ollama", "level": "hands-on" },
-        { "name": "AI Agents", "level": "working-knowledge" },
-        { "name": "Automation", "level": "hands-on" }
+        {
+          "name": "Machine Learning",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "scikit-learn",
+          "level": "project-experience"
+        },
+        {
+          "name": "PyTorch",
+          "level": "familiar"
+        },
+        {
+          "name": "AI APIs",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "Local AI",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "Ollama",
+          "level": "hands-on"
+        },
+        {
+          "name": "AI Agents",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "Automation",
+          "level": "hands-on"
+        }
       ]
     },
     {
       "id": "it-infrastructure",
       "label": "IT & Infrastructure",
       "skills": [
-        { "name": "Windows", "level": "hands-on" },
-        { "name": "Windows Server", "level": "working-knowledge" },
-        { "name": "IT Support", "level": "hands-on" },
-        { "name": "Troubleshooting", "level": "hands-on" },
-        { "name": "Networking", "level": "working-knowledge" },
-        { "name": "Cisco concepts", "level": "familiar" },
-        { "name": "VLANs", "level": "working-knowledge" },
-        { "name": "S-VLANs", "level": "familiar" },
-        { "name": "Port Security", "level": "familiar" },
-        { "name": "DNS", "level": "working-knowledge" },
-        { "name": "DMZ", "level": "familiar" },
-        { "name": "IP Phones", "level": "hands-on" },
-        { "name": "Device Configuration", "level": "hands-on" },
-        { "name": "Asset Management", "level": "hands-on" }
+        {
+          "name": "Windows",
+          "level": "hands-on"
+        },
+        {
+          "name": "Windows Server",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "IT Support",
+          "level": "hands-on"
+        },
+        {
+          "name": "Troubleshooting",
+          "level": "hands-on"
+        },
+        {
+          "name": "Networking",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "Cisco concepts",
+          "level": "familiar"
+        },
+        {
+          "name": "VLANs",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "S-VLANs",
+          "level": "familiar"
+        },
+        {
+          "name": "Port Security",
+          "level": "familiar"
+        },
+        {
+          "name": "DNS",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "DMZ",
+          "level": "familiar"
+        },
+        {
+          "name": "IP Phones",
+          "level": "hands-on"
+        },
+        {
+          "name": "Device Configuration",
+          "level": "hands-on"
+        },
+        {
+          "name": "Asset Management",
+          "level": "hands-on"
+        },
+        {
+          "name": "Linux Administration",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "TCP/IP",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "PBX Systems",
+          "level": "familiar"
+        },
+        {
+          "name": "Banking Software Systems",
+          "level": "hands-on"
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity",
+      "label": "Cybersecurity & Ethical Hacking",
+      "skills": [
+        {
+          "name": "Nmap",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "Wireshark",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "Burp Suite",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "Information Gathering",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "Vulnerability Scanning",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "Penetration Testing",
+          "level": "familiar"
+        },
+        {
+          "name": "Wireless & Application Exploitation",
+          "level": "familiar"
+        },
+        {
+          "name": "Social Engineering",
+          "level": "familiar"
+        }
       ]
     },
     {
       "id": "professional",
       "label": "Professional",
       "skills": [
-        { "name": "Project Management", "level": "working-knowledge" },
-        { "name": "Problem Solving", "level": "hands-on" },
-        { "name": "Systems Thinking", "level": "hands-on" },
-        { "name": "Documentation", "level": "hands-on" },
-        { "name": "Technical Support", "level": "hands-on" },
-        { "name": "Research", "level": "hands-on" },
-        { "name": "Continuous Improvement", "level": "hands-on" }
+        {
+          "name": "Project Management",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "Problem Solving",
+          "level": "hands-on"
+        },
+        {
+          "name": "Systems Thinking",
+          "level": "hands-on"
+        },
+        {
+          "name": "Documentation",
+          "level": "hands-on"
+        },
+        {
+          "name": "Technical Support",
+          "level": "hands-on"
+        },
+        {
+          "name": "Research",
+          "level": "hands-on"
+        },
+        {
+          "name": "Continuous Improvement",
+          "level": "hands-on"
+        },
+        {
+          "name": "Team Leadership",
+          "level": "working-knowledge"
+        },
+        {
+          "name": "Time Management",
+          "level": "hands-on"
+        },
+        {
+          "name": "Cross-Functional Coordination",
+          "level": "hands-on"
+        },
+        {
+          "name": "Data Management & Cleaning",
+          "level": "hands-on"
+        }
       ]
     }
   ],

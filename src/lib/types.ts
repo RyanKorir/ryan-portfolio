@@ -77,8 +77,10 @@ export interface Profile {
   education: {
     degree: string;
     institution: string;
+    years?: string;
     relevantAreas: string[];
   };
+  interests?: string[];
   photo: {
     status: "placeholder" | "uploaded";
     note: string;
@@ -104,7 +106,8 @@ export interface Certificate {
   title: string;
   issuer: string;
   date: string;
-  credentialId: string;
+  credentialId?: string;
+  dateLabel?: string;
   type: "certificate";
 }
 

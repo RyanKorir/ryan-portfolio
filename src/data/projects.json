@@ -256,5 +256,24 @@
     "demoUrl": null,
     "roadmap": null,
     "note": "Demonstrates Ryan's early practical software-development experience."
+  },
+  {
+    "id": "intern-management-system",
+    "title": "Intern Management System",
+    "category": "Business Software",
+    "status": "Initiated / In development",
+    "featured": false,
+    "shortDescription": "A system for tracking and managing intern activities, started during the Gulf African Bank internship.",
+    "problem": "Intern activities needed better tracking and management.",
+    "solution": "Development of an Intern Management System, initiated at Gulf African Bank to improve how intern activities are tracked and managed.",
+    "technologies": [
+      "Python"
+    ],
+    "currentState": "Development initiated; source code is on GitHub.",
+    "whatRyanLearned": "[ADD DETAIL]",
+    "githubUrl": "https://github.com/RyanKorir/InternManagementSystem",
+    "demoUrl": null,
+    "roadmap": null,
+    "note": null
   }
 ]

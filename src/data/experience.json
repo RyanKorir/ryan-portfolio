@@ -6,19 +6,21 @@
     "type": "ICT Internship / Practical Experience",
     "dateRange": "09/2025 – 08/2026",
     "location": "Nairobi, Kenya",
-    "summary": "Practical ICT support and infrastructure exposure within a banking environment, spanning help-desk support, device deployment, documentation, and hands-on networking concepts.",
+    "summary": "Practical ICT support and infrastructure exposure within a banking environment — resolving user and system issues, managing data and records, supporting cross-team projects, and initiating an internal Intern Management System.",
     "responsibilities": [
-      "Assist staff with daily administrative and technical tasks",
-      "Provide technical support by identifying and resolving system and user issues",
-      "Data entry, cleaning, and basic reporting for accurate information",
-      "Work with different teams to complete tasks and support ongoing projects",
-      "Organize and maintain records for easy access and compliance",
-      "Use banking systems and workplace tools for daily responsibilities",
-      "Improve workflow by helping streamline routine processes",
-      "IT help-desk support",
+      "Resolved technical and user issues to keep daily operations running",
+      "Troubleshooting and resolution of system issues",
+      "Data entry, cleaning, and basic reporting",
+      "Coordinated with multiple teams on operational tasks and ongoing projects",
+      "Maintained organized records and documentation for retrieval and compliance",
+      "Daily use of banking systems and workplace technologies",
+      "Streamlined routine administrative and technical workflows",
+      "Completed tasks within deadlines, in line with organizational policy",
+      "Attended workshops and training sessions",
+      "Initiated development of an Intern Management System to track intern activities",
+      "Led team-building activities for interns",
       "PC setup, configuration, and deployment of new computers",
       "Device documentation and IT asset tracking",
-      "Branch/user support",
       "IP phone setup",
       "Server-room organization and cable management"
     ],
@@ -30,42 +32,43 @@
       "DMZ",
       "DAC"
     ],
-    "environment": ["Windows environments"]
+    "environment": [
+      "Windows environments"
+    ]
   },
   {
     "id": "gulf-african-bank-intern",
     "organization": "Gulf African Bank",
-    "roleLabel": "Intern",
+    "roleLabel": "ICT Intern",
     "type": "Internship",
     "dateRange": "05/2024 – 09/2024",
     "location": "Nairobi, Kenya",
-    "summary": "Earlier internship stint supporting staff and gaining hands-on exposure to industry workflows and tools.",
+    "summary": "Earlier internship stint supporting staff and applying academic knowledge to real workplace situations.",
     "responsibilities": [
-      "Supported staff members in daily tasks, reducing workload burden",
-      "Gained experience applying learned concepts directly into work situations",
+      "Supported staff with daily tasks, freeing time for priority assignments",
+      "Applied academic knowledge to real-world workplace situations",
       "Analyzed problems and worked with teams to develop solutions",
-      "Collaborated with fellow interns on group projects and presentations",
-      "Sorted and organized files, spreadsheets, and reports",
-      "Gained hands-on experience across various software programs",
-      "Participated in workshops and presentations related to projects",
-      "Developed organizational skills managing multiple tasks under deadlines"
+      "Coordinated with fellow interns on group projects and presentations",
+      "Organized and maintained files, spreadsheets, and reports",
+      "Built proficiency in workplace software and digital tools",
+      "Participated in workshops and presentations",
+      "Managed multiple responsibilities while meeting deadlines"
     ]
   },
   {
     "id": "kplc-attache",
     "organization": "Kenya Power and Lighting Company",
-    "roleLabel": "Attaché",
+    "roleLabel": "ICT Attaché",
     "type": "Industrial Attachment",
     "dateRange": "05/2023 – 08/2023",
     "location": "Nairobi, Kenya",
     "summary": "Industrial attachment providing IT support and gaining practical exposure to project management, data analysis, and troubleshooting within a corporate IT environment.",
     "responsibilities": [
-      "Stayed current on business developments to answer questions on public events",
-      "Assessed hardware, mice, and keyboards to verify performance",
-      "Gained practical experience in project management, data analysis, and troubleshooting",
-      "Provided technical support to company staff across internal and external applications",
-      "Supported maintenance, installation, and upgrade of operating systems including Windows and Linux"
+      "Kept current on business developments to address staff inquiries and support public-facing events",
+      "Evaluated hardware components (mice, keyboards) to verify performance standards",
+      "Practical project management, data analysis, and troubleshooting in a corporate IT environment",
+      "End-to-end technical support for staff across internal and external applications",
+      "Maintenance, installation, and upgrade of operating systems including Windows and Linux"
     ]
   }
 ]
-

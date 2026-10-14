@@ -35,11 +35,13 @@ export default function Certifications({ data }: { data: CertificationsData }) {
                   </p>
                   <p className="mt-1 text-sm text-white/60">{cert.issuer}</p>
                   <p className="mt-2 font-mono text-xs text-accent-cyan">
-                    Completed {formatDate(cert.date)}
+                    Completed {cert.dateLabel ?? formatDate(cert.date)}
                   </p>
-                  <p className="mt-1 truncate font-mono text-[10px] text-white/30">
-                    ID: {cert.credentialId}
-                  </p>
+                  {cert.credentialId && (
+                    <p className="mt-1 truncate font-mono text-[10px] text-white/30">
+                      ID: {cert.credentialId}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>

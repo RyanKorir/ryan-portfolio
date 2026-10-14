@@ -10,7 +10,7 @@
     "AI/Automation Explorer",
     "Systems Thinker"
   ],
-  "story": "Ryan started from an Information Technology foundation and gained practical exposure through ICT support and internship work. His experience includes working with users, devices, systems, networking concepts, documentation, troubleshooting, infrastructure, and IT operations. Alongside formal IT experience, he has continuously experimented with software development, machine learning, AI assistants, web applications, automation, SaaS concepts, and game development.",
+  "story": "Ryan started from an Information Technology foundation and gained practical exposure through ICT support and internship work. His experience includes working with users, devices, systems, networking concepts, documentation, troubleshooting, infrastructure, and IT operations. Alongside formal IT experience, he has continuously experimented with software development, machine learning, AI assistants, web applications, automation, SaaS concepts, and game development. Alongside that, he has been building cybersecurity skills — ethical hacking and penetration testing with tools such as Nmap, Wireshark, and Burp Suite — and holds a Cloud & Network Security certification from Cyber Shujaa. He is analytical and organized, and skilled at breaking down complex issues into simple explanations.",
   "philosophy": "Understand the problem → understand the system → build a solution → test it → improve it.",
   "hero": {
     "heading": "Ryan Kiprotich Korir",
@@ -21,10 +21,26 @@
     "optionalCta": "Enter Command Center"
   },
   "howIBuild": [
-    { "step": "01", "title": "DISCOVER", "description": "Understand the problem." },
-    { "step": "02", "title": "DESIGN", "description": "Map the system and solution." },
-    { "step": "03", "title": "BUILD", "description": "Create the working implementation." },
-    { "step": "04", "title": "TEST & IMPROVE", "description": "Break it, learn from it, and iterate." }
+    {
+      "step": "01",
+      "title": "DISCOVER",
+      "description": "Understand the problem."
+    },
+    {
+      "step": "02",
+      "title": "DESIGN",
+      "description": "Map the system and solution."
+    },
+    {
+      "step": "03",
+      "title": "BUILD",
+      "description": "Create the working implementation."
+    },
+    {
+      "step": "04",
+      "title": "TEST & IMPROVE",
+      "description": "Break it, learn from it, and iterate."
+    }
   ],
   "education": {
     "degree": "Bachelor of Science in Information Technology",
@@ -39,10 +55,17 @@
       "Machine Learning",
       "Networking",
       "Systems Analysis"
-    ]
+    ],
+    "years": "2021 – 2025"
   },
   "photo": {
     "status": "placeholder",
     "note": "[ADD PROFILE PHOTO] — owner to upload. Fallback should render an RK monogram avatar."
-  }
+  },
+  "interests": [
+    "AI Coding and Implementation",
+    "Technology Research and Innovation",
+    "Cybersecurity and Ethical Hacking",
+    "Continuous Learning and Professional Development"
+  ]
 }
